@@ -10,8 +10,25 @@ package Domain;
  * @author ENOR ACOSTA
  */
 public class Persona {
-    String dni;
-    String nombre;
-    String Apellido;
+
+    String primerNombre;
+    String segundoNombre;
+    String primerApellido;
+    String segundoApellido;
+    String identificacion;
+    String tipoIdentificacion;
+    String email;
+    
+    
+    public Persona(String primerNombre, String segundoNombre, String primerApellido, String segundoApellido, String identificacion, String tipoIdentificacion, String email) {
+        this.primerNombre = primerNombre;
+        this.segundoNombre = segundoNombre;
+        this.primerApellido = primerApellido;
+        this.segundoApellido = segundoApellido;
+        this.identificacion = identificacion;
+        this.tipoIdentificacion = tipoIdentificacion;
+        this.email = email;
+    }
+    
     
 }
