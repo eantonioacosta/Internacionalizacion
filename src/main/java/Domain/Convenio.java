@@ -5,12 +5,26 @@
  */
 package Domain;
 
+import java.util.Date;
+
 /**
  *
  * @author leysa
  */
 public class Convenio {
+    
+    String codigo;
+    Date fechaInicio;
+    Date fechaFinal;
 
+    public Convenio(String codigo, Date fechaInicio, Date fechaFinal) {
+        this.codigo = codigo;
+        this.fechaInicio = fechaInicio;
+        this.fechaFinal = fechaFinal;
+    }
+    
+    
+    
     public void agregarPrograma() {
 
     }

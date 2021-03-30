@@ -5,23 +5,26 @@
  */
 package Domain;
 
+import java.util.Date;
+
 /**
  *
  * @author leysa
  */
 public class Estudiante extends Persona {
 
-    String emailInstitucional;
+
     double promedioAcumulado;
     int ubicacionSemestral;
     int materiasPerdidas;
 
-    public Estudiante(String emailInstitucional, double promedioAcumulado, int ubicacionSemestral, int materiasPerdidas, String primerNombre, String segundoNombre, String primerApellido, String segundoApellido, String identificacion, String tipoIdentificacion, String email) {
-        super(primerNombre, segundoNombre, primerApellido, segundoApellido, identificacion, tipoIdentificacion, email);
-        this.emailInstitucional = emailInstitucional;
+    public Estudiante(double promedioAcumulado, int ubicacionSemestral, int materiasPerdidas, String primerNombre, String segundoNombre, String primerApellido, String segundoApellido, String identificacion, String email, String emailInstitucional, Date fechaNacimiento) {
+        super(primerNombre, segundoNombre, primerApellido, segundoApellido, identificacion, email, emailInstitucional, fechaNacimiento);
         this.promedioAcumulado = promedioAcumulado;
         this.ubicacionSemestral = ubicacionSemestral;
         this.materiasPerdidas = materiasPerdidas;
     }
+
+
 
 }

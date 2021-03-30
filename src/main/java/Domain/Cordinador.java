@@ -5,14 +5,16 @@
  */
 package Domain;
 
+import java.util.Date;
+
 /**
  *
  * @author leysa
  */
 public class Cordinador extends Persona{
-    
-    public Cordinador(String primerNombre, String segundoNombre, String primerApellido, String segundoApellido, String identificacion, String tipoIdentificacion, String email) {
-        super(primerNombre, segundoNombre, primerApellido, segundoApellido, identificacion, tipoIdentificacion, email);
+
+    public Cordinador(String primerNombre, String segundoNombre, String primerApellido, String segundoApellido, String identificacion, String email, String emailInstitucional, Date fechaNacimiento) {
+        super(primerNombre, segundoNombre, primerApellido, segundoApellido, identificacion, email, emailInstitucional, fechaNacimiento);
     }
-    
+
 }
