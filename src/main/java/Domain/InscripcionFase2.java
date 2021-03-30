@@ -11,6 +11,16 @@ package Domain;
  */
 public class InscripcionFase2 {
 
+    private String rutaDocumentoIdentidad;
+    private String rutaCartaMotivacion;
+    private String rutaCartaPostulacion;
+    private String rutaHojaVida;
+    private String rutaformatoBeca;
+    private String rutaPasaporte;
+    private String rutaVisa;
+    private String rutaCertificadoSalud;
+    private String rutaConstanciaSancion;
+    
     public boolean validarEstadoInscripcion() {
         return false;
     }

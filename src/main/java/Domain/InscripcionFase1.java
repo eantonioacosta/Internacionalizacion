@@ -10,7 +10,15 @@ package Domain;
  * @author leysa
  */
 public class InscripcionFase1 {
-
+    
+    private String rutaPromedio;
+    private String rutaSemillero;
+    private String rutaPublicaciones;
+    private String rutaActAcademica;
+    private String rutaActCultural;
+    private String rutaActDeportiva;
+    private String rutaActExtra;
+    
     public void puntajePromedio() {
 
     }
