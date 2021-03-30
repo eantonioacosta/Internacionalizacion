@@ -11,7 +11,7 @@ import java.util.Date;
  *
  * @author leysa
  */
-public class Administrador extends Persona {
+public class Coordinador extends Persona{
 
 
 

@@ -10,12 +10,19 @@ package Domain;
  * @author leysa
  */
 public class Usuario {
-    String nombre;
-    String clave;
+    private String nombre;
+    private String clave;
+
+    public Usuario() {
+    }
 
     public Usuario(String nombre, String clave) {
         this.nombre = nombre;
         this.clave = clave;
+    }
+    
+    public void actualizarClave(String pass){
+        
     }
     
 }

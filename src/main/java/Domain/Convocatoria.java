@@ -5,6 +5,7 @@
  */
 package Domain;
 
+import java.util.ArrayList;
 import java.util.Date;
 
 /**
@@ -13,10 +14,15 @@ import java.util.Date;
  */
 public class Convocatoria {
 
-    String codigo;
-    String nombre;
-    Date fechaInicio;
-    Date fechaFinal;
+    private String codigo;
+    private String nombre;
+    private Date fechaInicio;
+    private Date fechaFinal;
+    private ArrayList<InscripcionFase1> listaInscritos;
+
+    public Convocatoria() {
+        listaInscritos = new ArrayList<>();
+    }
 
     public Convocatoria(String codigo, String nombre, Date fechaInicio, Date fechaFinal) {
         this.codigo = codigo;
@@ -24,17 +30,16 @@ public class Convocatoria {
         this.fechaInicio = fechaInicio;
         this.fechaFinal = fechaFinal;
     }
-    
-    
-    public void consultarListaInscritos() {
+
+    public ArrayList<InscripcionFase1> consultarListaInscritos() {
+        return listaInscritos;
+    }
+
+    public void agregarInscripcion(InscripcionFase1 inscripcion) {
 
     }
 
-    public void agregarInscripcion() {
-
-    }
-
-    public void cancelarInscripcion() {
+    public void cancelarInscripcion(String identificacion) {
 
     }
 
@@ -48,16 +53,58 @@ public class Convocatoria {
 
     public boolean validarPromedioAcumulado() {
 
-    return false;
+        return false;
     }
 
     public boolean validarNoBeneficiario() {
 
-    return false;
+        return false;
     }
 
     public boolean validarNoSemstres() {
 
-    return false;
+        return false;
     }
+
+    public String getCodigo() {
+        return codigo;
+    }
+
+    public void setCodigo(String codigo) {
+        this.codigo = codigo;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public Date getFechaInicio() {
+        return fechaInicio;
+    }
+
+    public void setFechaInicio(Date fechaInicio) {
+        this.fechaInicio = fechaInicio;
+    }
+
+    public Date getFechaFinal() {
+        return fechaFinal;
+    }
+
+    public void setFechaFinal(Date fechaFinal) {
+        this.fechaFinal = fechaFinal;
+    }
+
+    public ArrayList<InscripcionFase1> getListaInscritos() {
+        return listaInscritos;
+    }
+
+    public void setListaInscritos(ArrayList<InscripcionFase1> listaInscritos) {
+        this.listaInscritos = listaInscritos;
+    }
+    
+    
 }

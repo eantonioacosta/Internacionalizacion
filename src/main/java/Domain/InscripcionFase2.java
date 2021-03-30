@@ -11,8 +11,7 @@ package Domain;
  */
 public class InscripcionFase2 {
 
-    public boolean validarStadoInscripcion() {
-
-    return false;
+    public boolean validarEstadoInscripcion() {
+        return false;
     }
 }
